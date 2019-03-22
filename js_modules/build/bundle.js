@@ -63,26 +63,40 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ function(module, exports) {
 
-var sum = function sum(a, b) {
-  return a + b;
-};
-
-module.exports = sum;
+var image = document.createElement('img');
+image.src = 'http://lorempixel.com/400/400';
+document.body.appendChild(image);
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-var sum = __webpack_require__(0);
+"use strict";
+var sum = function sum(a, b) {
+  return a + b;
+};
 
-var total = sum(10, 5);
+/* harmony default export */ exports["a"] = sum;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sum__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__image_viewer__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__image_viewer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__image_viewer__);
+
+
+var total = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__sum__["a" /* default */])(10, 5);
 console.log(total);
 
 /***/ }
