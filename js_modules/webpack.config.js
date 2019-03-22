@@ -7,6 +7,7 @@ const config = {
     // resolve() checks if the path is correct
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
+    publicPath: 'build/',
   },
   module: {
     rules: [

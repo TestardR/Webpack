@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "build/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 5);
@@ -81,8 +81,11 @@
 
 
 var image = document.createElement('img');
-image.src = 'http://lorempixel.com/400/400';
+image.src = __WEBPACK_IMPORTED_MODULE_2__assets_small_jpg___default.a;
 document.body.appendChild(image);
+var bigImage = document.createElement('img');
+bigImage.src = __WEBPACK_IMPORTED_MODULE_1__assets_big_jpg___default.a;
+document.body.appendChild(bigImage);
 
 /***/ },
 /* 1 */
