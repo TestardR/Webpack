@@ -28,7 +28,7 @@ const componentRoutes = {
     {
       path: 'artists/:id/edit',
       getComponent(location, cb) {
-        System.import('/components/artists/ArtistEdit').then(module =>
+        System.import('./components/artists/ArtistEdit').then(module =>
           cb(null, module.default)
         );
       }
